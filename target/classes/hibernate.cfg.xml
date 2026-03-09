@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+   "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+   "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">  
+
+<hibernate-configuration>  
+   <session-factory>  
+      <!-- Auto create/update tables -->
+      <property name="hbm2ddl.auto">update</property>  
+
+      <!-- SQL Dialect -->
+      <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>  
+
+      <!-- Database connection -->
+      <property name="connection.url">jdbc:mysql://localhost:3306/Hibernate_CRUD_sec63</property>  
+      <property name="connection.username">root</property>  
+      <property name="connection.password">root</property>  
+      <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>  
+
+      <!-- Annotated Product class -->
+      <mapping class="klu.Hibernate_crud_skill_3.Product"/>  
+   </session-factory>  
+</hibernate-configuration>
