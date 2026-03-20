@@ -10,9 +10,6 @@ import jakarta.persistence.GenerationType;
 
 @Entity
 
-
-
-
 public class Product {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto increment

@@ -21,9 +21,9 @@ public class App
         Session session = factory.openSession();
         Transaction tx = session.beginTransaction();
 
-        Product p1 = new Product("Laptop", "Electronics", 75000, 10);
-        Product p2 = new Product("Mobile", "Electronics", 30000, 25);
-        Product p3 = new Product("Table", "Furniture", 5000, 15);
+        Product p1 = new Product("Television", "Electronics", 65000, 1);
+        Product p2 = new Product("Laptop", "Electronics", 31200, 5);
+        Product p3 = new Product("Chairs", "Furniture", 5286, 12);
 
         session.save(p1);
         session.save(p2);
